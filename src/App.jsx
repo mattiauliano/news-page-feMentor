@@ -1,6 +1,6 @@
 import { useState } from "react";
-import menuIcon from "../public/images/icon-menu.svg";
-import menuIconClose from "../public/images/icon-menu-close.svg";
+import menuIcon from "../public/static/images/icon-menu.svg";
+import menuIconClose from "../public/static/images/icon-menu-close.svg";
 
 function App() {
   const [isClicked, setIsClicked] = useState(false);
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        <img src="../public/images/logo.svg" alt="Logo" />
+        <img src="../public/static/images/logo.svg" alt="Logo" />
 
         <nav>
           <ul className={isClicked ? "active" : null}>
@@ -31,7 +31,7 @@ function App() {
       <div className="container home-container">
         <main>
           <img
-            src="../public/images/image-web-3-desktop.jpg"
+            src="../public/static/images/image-web-3-desktop.jpg"
             alt="Image Web-3 Desktop"
           />
           <div className="main-article-content">
@@ -65,7 +65,7 @@ function App() {
       <div className="top-news">
         <article className="card">
           <img
-            src="../public/images/image-retro-pcs.jpg"
+            src="../public/static/images/image-retro-pcs.jpg"
             alt="Retro Computer"
           />
           <div className="top-news__content">
@@ -76,7 +76,10 @@ function App() {
         </article>
 
         <article className="card">
-          <img src="../public/images/image-top-laptops.jpg" alt="Laptops" />
+          <img
+            src="../public/static/images/image-top-laptops.jpg"
+            alt="Laptops"
+          />
           <div className="top-news__content">
             <div className="number">02</div>
             <h3>Top 10 Laptops of 2022</h3>
@@ -86,7 +89,7 @@ function App() {
 
         <article className="card">
           <img
-            src="../public/images/image-gaming-growth.jpg"
+            src="../public/static/images/image-gaming-growth.jpg"
             alt="Controller"
           />
           <div className="top-news__content">
